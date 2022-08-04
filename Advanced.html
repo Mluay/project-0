@@ -9,7 +9,7 @@
 </head>
 <body>
     <nav>
-        <img class="goimage" src="google.png" alt="">
+        <a href="index.html"><img class="goimage" src="google.png" alt=""></a>
         <ul>
             <li><a class="navlink" href="https://about.google/"><img src="Capture.PNG" alt=""></a></li>
             <li><a class="navlink" href="https://accounts.google.com/"><img src="download.jfif" alt="account image"  class="accimg"></a></li>
@@ -17,31 +17,34 @@
     </nav>
     <p class="Ad"> Advanced Search </p>
     <div class="div1">
+        <form action="https://www.google.com/search?as_q">
         <div class="t">
             <p>Find pages with...</p>
             <p>To do this in the search box.</p>
         </div>
         <div class="text">
             <p>all these words:</p>
-            <div style="margin-left: 98px;"><input class="in" type="text" ></div>
+            <div style="margin-left: 98px;"><input class="in" type="text" name="as_q"></div>
             <p class="end">Type the important words: tri-colour rat terrier</p>
         </div>
         <div class="text">
             <p>this exact word or phrase:</p>
-            <div style="margin-left: 28px;"><input class="in" type="text" ></div>
+            <div style="margin-left: 28px;"><input class="in" type="text" name="as_q" ></div>
             <p class="end">Put exact words in quotes: "rat terrier"</p>
         </div>
         <div class="text">
             <p>any of these words:</p>
-            <div style="margin-left: 70px;"><input class="in" type="text" ></div>
+            <div style="margin-left: 70px;"><input class="in" type="text" name="as_q" ></div>
             <p class="end">Type OR between all the words you want: miniature OR standard</p>
         </div>
         <div class="text">
             <p>none of these words:</p>
-            <div style="margin-left: 60px;"><input class="in" type="text" ></div>
+            <div style="margin-left: 60px;"><input class="in" type="text" name="as_q" ></div>
             <p class="end">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
         </div>
-
     </div>
+    <div>
+        <input class="searchbut" type="submit" value="Advanced Search">
+    </div></form>
 </body>
 </html>
